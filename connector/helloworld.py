@@ -123,6 +123,43 @@ from sys import argv
 
 script, filename = argv
 
+print("We are going to erase file: {}".format(filename))
+print("If you don't want that, then hit CTRL-C.")
+print("If you want that, then hit RETURN.")
 
+input(">>")
+
+print("Opening the file...")
+target = open(filename,'w')
+
+print("Truncating the file..Goodbye!")
+target.truncate()
+
+print("This is what the file contains now...")
+target.close()
+same_file = open(filename)
+print(same_file.read())
+print("That is basically...nothing")
+
+print("Now I am going to write something to the file.")
+
+line = []
+target = open(filename,'w')
+
+for i in range(1,4):
+    line.append(input("line {}: ".format(i)))
+    target.write(line[i-1])
+    target.write("\n")
+
+print("And finally, we close it.")
+target.close()
+
+print("What do you say we print out the final file?")
+for i in open(filename):
+    print(i)
+
+"""
+Exercise 17
+"""
 
 
