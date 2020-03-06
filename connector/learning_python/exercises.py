@@ -27,4 +27,30 @@ Exercise 17
 """
 Exercise 18
 """
- 
+
+# def print_two(*args):
+#     arg1, arg2 = args
+#     print("arg1: {}, arg2: {}".format(arg1,arg2))
+
+# def print_one(arg1):
+#     print("arg1: {}".format(arg1))
+
+# def print_none():
+#     print("I got nothin'")
+
+# print_two("Zed", "Zag")
+# print_one("Just one")
+# print_none()
+
+# def print_variable(*args):
+#     print("\nnew instantiation")
+#     i = 1
+#     for arg in args:
+#         print("arg{}: {}".format(i, arg))
+#         i+=1
+
+# print_variable()
+# print_variable("one")
+# print_variable("one", "two")
+# print_variable("one","two","three")
+
